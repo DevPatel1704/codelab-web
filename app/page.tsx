@@ -2,6 +2,11 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
+/**
+ * Renders the Home page layout with a centered "Get Started" button.
+ *
+ * @returns The page JSX containing a full-height, centered container with a `Button` labeled "Get Started".
+ */
 export default async function Home() {
 
   return (
