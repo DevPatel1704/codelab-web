@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -12,11 +11,19 @@ import {
 import { Chrome, Github } from "lucide-react";
 import { signIn } from "@/auth";
 
+/**
+ * Initiates a sign-in flow using Google as the authentication provider.
+ *
+ * Triggers the application's configured Google authentication process.
+ */
 async function handleGoogleSignIn() {
     "use server"
     await signIn("google")
 }
 
+/**
+ * Initiates the sign-in flow using GitHub as the authentication provider.
+ */
 async function handleGithubSignIn() {
     "use server"
     await signIn("github")
